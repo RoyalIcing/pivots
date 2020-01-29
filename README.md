@@ -1,5 +1,7 @@
 # Pivots
 
+## Readable [discriminated unions](https://www.typescriptlang.org/docs/handbook/advanced-types.html#discriminated-unions) for TypeScript
+
 Problem: you have values which can be one of a possible set of types, such as actions to a reducer, or types of a value.
 
 Let’s take an example of a desk item. It could be a lamp, a notebook of size A5 or A4, or a pen of a specific type.
@@ -26,7 +28,7 @@ type DeskItem =
     };
 ```
 
-Wouldn’t it be nice if we could make this more readable, whilst also having a system for working with these types? Enter pivots —
+Wouldn’t it be nice if we could make this more readable, whilst also having a system for working with these types? Enter Pivots —
 
 ```typescript
 type DeskItem2 = PivotsType<{
