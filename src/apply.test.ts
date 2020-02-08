@@ -9,7 +9,7 @@ function fresh<T>(maker: () => T, refresher: (object: T) => void): T {
   return result;
 }
 
-describe('callForType()', () => {
+describe('applyType()', () => {
   const methods = {
     noop: fresh(jest.fn, mock => mock.mockReset()),
     multiplyBy({ factor }: { factor: number }, n: number): number {
