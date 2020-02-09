@@ -1,6 +1,6 @@
 // Types
 
-export { Pivots, PivotsType } from './types';
+export { Pivots, PivotsOnly, PivotsType, PivotsOnlyTypes } from './types';
 
 // Functions
 
